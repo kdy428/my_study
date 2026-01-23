@@ -1,0 +1,29 @@
+import requests
+from pprint import pprint as print
+
+# 무작위 유저 정보 요청 경로
+API_URL = 'https://jsonplaceholder.typicode.com/users/'
+# API 요청
+response = requests.get(API_URL)
+# JSON -> dict 데이터 변환
+parsed_data = response.json()
+
+# 변환 데이터 출력
+# print(parsed_data)
+
+
+# 특정 데이터 출력
+dummy_data = []
+
+for i in range(10) :
+    company = parsed_data[i]["company"]["name"]
+    lat = parsed_data[i]["address"]["geo"]["lat"]
+    lng = parsed_data[i]["address"]["geo"]["lng"]
+    name = parsed_data[i]["name"]
+
+    if ((80 > float(lat) > -80) and (80> float(lng) > -80)):
+        dummy = {'company': company, 'lat' : lat, 'lng' : lng, 'name' : name}
+
+        dummy_data.append(dummy)
+
+print(dummy_data)
