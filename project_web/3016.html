@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여행 블로그</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* 하단바가 본문을 가리지 않도록 여백 추가 */
+    body {
+      padding-bottom: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+      <!-- 브랜드 -->
+      <a class="navbar-brand fw-bold" href="#">여행 블로그</a>
+
+      <!-- 토글 버튼 -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 메뉴 -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-white" href="#">홈</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">목적지</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">여행 팁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">갤러리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">접속자 정보</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- 본문 예시 -->
+  <main class="container py-5">
+    <h1>본문 영역</h1>
+    <p>여기에 여행 관련 콘텐츠가 들어갑니다.</p>
+  </main>
+
+  <!-- 하단 바 -->
+  <nav class="navbar navbar-dark bg-primary fixed-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- 왼쪽 -->
+      <span class="navbar-brand mb-0 h6">여행 블로그</span>
+
+      <!-- 오른쪽 -->
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link px-2 text-white" href="#">홈</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">목적지</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">여행 팁</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">갤러리</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">접속자 정보</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
