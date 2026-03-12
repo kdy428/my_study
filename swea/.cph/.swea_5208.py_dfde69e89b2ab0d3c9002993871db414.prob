@@ -1,0 +1,1 @@
+{"name":"Local: swea_5208","url":"c:\\Users\\SSAFY\\Desktop\\DY\\my_study\\swea\\swea_5208.py","tests":[{"id":1773286409551,"input":"3\n5 2 3 1 1\n10 2 1 3 2 2 5 4 2 1\n10 1 1 2 1 2 2 1 2 1","output":"#1 1\n#2 2\n#3 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SSAFY\\Desktop\\DY\\my_study\\swea\\swea_5208.py","group":"local","local":true}
